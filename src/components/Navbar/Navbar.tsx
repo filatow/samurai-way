@@ -5,7 +5,7 @@ export const Navbar = () => {
     return (
         <nav className={s.nav}>
             <div className={s.item}>
-                {/*<a href="#1">Profile</a>*/}
+                {/*<a href="#1">Post</a>*/}
                 Profile
             </div>
             <div className={s.item}>
