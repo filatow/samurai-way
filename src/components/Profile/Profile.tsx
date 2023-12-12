@@ -4,7 +4,7 @@ import {MyPosts} from './MyPosts/MyPosts';
 
 export const Profile = () => {
     return (
-        <div className={s.content}>
+        <div>
             <div>
                 <img src="https://goo.su/d6QT" alt="thumbnail"/>
             </div>
