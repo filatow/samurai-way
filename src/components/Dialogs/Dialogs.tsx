@@ -4,36 +4,51 @@ import {NavLink} from 'react-router-dom';
 
 type DialogsPropsType = {}
 
+type DialogItemPropsType = {
+    name: string
+    id: string
+}
+
+type MessageItemPropsType = {
+    message: string
+}
+
+const DialogItem = (props: DialogItemPropsType) => {
+    const path = `/dialogs/${props.id}`;
+
+    return (
+        <li className={`${s.dialogItem}`}>
+            <NavLink to={path} activeClassName={s.active}>
+                {props.name}
+            </NavLink>
+        </li>
+    )
+}
+
+const MessageItem = (props: MessageItemPropsType) => {
+    return (
+        <li className={s.messageItem}>{props.message}</li>
+    )
+}
+
 export const Dialogs = (props: DialogsPropsType) => {
     return (
         <div className={s.messenger}>
             <div className={s.dialogs}>
                 <ul className={s.dialogList}>
-                    <li className={`${s.dialogItem}`}>
-                        <NavLink to={'/dialogs/1'} activeClassName={s.active}>Dimych</NavLink>
-                    </li>
-                    <li className={s.dialogItem}>
-                        <NavLink to={'/dialogs/2'} activeClassName={s.active}>Andrey</NavLink>
-                    </li>
-                    <li className={s.dialogItem}>
-                        <NavLink to={'/dialogs/3'} activeClassName={s.active}>Sveta</NavLink>
-                    </li>
-                    <li className={s.dialogItem}>
-                        <NavLink to={'/dialogs/4'} activeClassName={s.active}>Sasha</NavLink>
-                    </li>
-                    <li className={s.dialogItem}>
-                        <NavLink to={'/dialogs/5'} activeClassName={s.active}>Viktor</NavLink>
-                    </li>
-                    <li className={s.dialogItem}>
-                        <NavLink to={'/dialogs/6'} activeClassName={s.active}>Valera</NavLink>
-                    </li>
+                    <DialogItem name="Dimych" id="1"/>
+                    <DialogItem name="Andrey" id="2"/>
+                    <DialogItem name="Sveta" id="3"/>
+                    <DialogItem name="Sasha" id="4"/>
+                    <DialogItem name="Viktor" id="5"/>
+                    <DialogItem name="Valera" id="6"/>
                 </ul>
             </div>
             <div className={s.messages}>
                 <ul className={s.messageList}>
-                    <li className={s.messageItem}>Hi</li>
-                    <li className={s.messageItem}>How is your it-kamasutra?</li>
-                    <li className={s.messageItem}>Yo!!!</li>
+                    <MessageItem message="Hi"/>
+                    <MessageItem message="How is your it-kamasutra?"/>
+                    <MessageItem message="Yo!!!"/>
                 </ul>
             </div>
         </div>
