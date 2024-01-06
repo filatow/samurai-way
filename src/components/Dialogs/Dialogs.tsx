@@ -10,22 +10,22 @@ export const Dialogs = (props: DialogsPropsType) => {
             <div className={s.dialogs}>
                 <ul className={s.dialogList}>
                     <li className={`${s.dialogItem}`}>
-                        <NavLink to={'#'} activeClassName={s.active}>Dimych</NavLink>
+                        <NavLink to={'/dialogs/1'} activeClassName={s.active}>Dimych</NavLink>
                     </li>
                     <li className={s.dialogItem}>
-                        <NavLink to={'#'}>Andrey</NavLink>
+                        <NavLink to={'/dialogs/2'} activeClassName={s.active}>Andrey</NavLink>
                     </li>
                     <li className={s.dialogItem}>
-                        <NavLink to={'#'}>Sveta</NavLink>
+                        <NavLink to={'/dialogs/3'} activeClassName={s.active}>Sveta</NavLink>
                     </li>
                     <li className={s.dialogItem}>
-                        <NavLink to={'#'}>Sasha</NavLink>
+                        <NavLink to={'/dialogs/4'} activeClassName={s.active}>Sasha</NavLink>
                     </li>
                     <li className={s.dialogItem}>
-                        <NavLink to={'#'}>Viktor</NavLink>
+                        <NavLink to={'/dialogs/5'} activeClassName={s.active}>Viktor</NavLink>
                     </li>
                     <li className={s.dialogItem}>
-                        <NavLink to={'#'}>Valera</NavLink>
+                        <NavLink to={'/dialogs/6'} activeClassName={s.active}>Valera</NavLink>
                     </li>
                 </ul>
             </div>
