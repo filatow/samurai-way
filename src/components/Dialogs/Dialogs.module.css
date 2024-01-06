@@ -1,0 +1,43 @@
+.messenger {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.messenger ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.dialogs {
+
+}
+
+.dialogList {
+
+}
+
+.dialogItem {
+
+}
+
+.dialogItem a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.dialogItem a.active {
+    color: lawngreen;
+}
+
+.messages {
+
+}
+
+.messageList {
+
+}
+
+.messageItem {
+
+}
